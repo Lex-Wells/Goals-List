@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&family=Jost:wght@300;400&family=PT+Mono&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="main-container" class="main-container">
+        <div id="header-container">
+            <img src="Todo Logo.png" alt="Logo" id="logo" height="65" width="125">
+            <div class="finished-todo-counter" id="finished-todo-counter"></div>
+        </div>
+    </div>
+    <div id="input-container">
+            <input maxlength="65" type="text" id="input-box" placeholder="What do you need todo?">
+            <label for="img-input" class="custom-img-upload" id="custom-img-upload">
+                <div class="data-tooltip" data-tooltip="Add a pic">
+                 <span id="material-icons-round-add" class="material-icons-round">
+                    add
+                    </span>
+                </div>
+                <input  type="file" id="img-input" accept="image/png, image/jpeg">
+            </label>
+
+            <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+        </div>
+
+        <div class="render-outer-container" id="render-outer-container">
+        </div>
+      </div>
+    
+        <div id="quote-container" class="quote-container">
+            <p id="quote-header" class="quote-header">Looking for some inspiration?</p>
+            <h4 class="click-here" id="click-here"><b>Click Here</b></h4>
+        </div>
+        
+    </div>
+
+
+<div class="pop-up" id="pop-up">
+    <div class="pic-box" id="pic-box">
+        <div class="header-pop">
+            <button data-exit-button class="exit-btn" type="button" id="exit-button">X</button>
+        </div>
+        <div class="img-render-container" id="img-render-container">
+        </div>
+        <div class="add-pop">
+            <button id="add-btn" class="add-btn"type="button">Add</button>
+        </div> 
+    </div>
+</div>
+
+<div class="tasks-pop-up" id="tasks-pop-up">
+    <div class="tasks-box" id="tasks-box">
+        <div class="tasks-pop">
+            <button data-exit-button class="exit-btn-tasks" type="button" id="exit-button-tasks">X</button>
+        </div>
+        <div class="tasks-container" id="tasks-container"></div>
+    </div>
+</div>
+            </div>
+        <div  id="dark-modal"></div>
+<script src="script.js"></script>
+</body>
+
+</html>
