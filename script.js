@@ -19,18 +19,6 @@ let totals = 0
 let todoList = []
 let savedTodos = []
 
-
-totdoTotalCounter.addEventListener('click', ()=>{
-
-})
-
-function oks(){  savedTodos.forEach((savedd)=>{
-  savedContainer.innerHTML+=`  <div id="render-container" class="render-container">
-  <div class="render-box" id="render-box"> 
-       <p class="render-text">   ${savedd.text}</p>
-</div>`
- })
-}
  
 
 function render(){
