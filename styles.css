@@ -180,6 +180,7 @@ width: 30px;
 .quote{
     display: flex;
     justify-content: center;
+    margin: 20px;
 
 }
 .author{
@@ -409,4 +410,50 @@ width: 30px;
 .chevron-toggle{
     transform: rotate(180deg);
     transition: 200ms ease-in-out;
+}
+@media screen and (max-width:600px){
+    .render-box{
+        background-color:  lightgray;;
+        height: 50px;
+        margin: auto;
+        margin-top: 20px;
+        width: 400px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);   
+        transition: 200ms ease-in-out;
+    } 
+    .render-img-container-active{
+        margin: auto;
+        background-color: pink;
+        height: 300px;
+        width: 400px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);
+        resize: both;
+        overflow: visible;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 200ms ease-in-out;
+    }
+    .render-img-container{
+        margin-top: 10px;
+    }
+    #input-container{
+      padding: 10px;
+    }
+}
+@media screen and (max-width:360px){
+    .render-box{
+        background-color:  lightgray;;
+        height: 50px;
+        margin: auto;
+        margin-top: 20px;
+        width: 350px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.59);   
+        transition: 200ms ease-in-out;
+    } 
 }
